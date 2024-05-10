@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FindMyPet - Register Pet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-register.css">
+</head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" >
+                <img src="./img/logo preta.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register Pet</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">User</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Info</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <br><br>
+    
+          <div class="title">
+            <img class='logo'src="./img/logo branca.png" alt="" srcset="">
+        </div>
+    
+        <br>
+        <h2>Register PET</h2>
+    </header>
+        <main>
+            <div class="form-div">
+                <form>
+                
+                    <div class="mb-3">
+                      <label for="title" class="form-label">Title</label>
+                      <input type="text" class="form-control" id="title" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <h6>Description</h6>
+                        <textarea name="message" style="width:100%; height:80px;"></textarea>
+                    </div>
+
+                <!--  -->
+                <div class="line">
+                    <div class="mb-3">
+                        <label for="encontro" class="form-label">Found where?</label>
+                        <input type="text" class="form-control" id="encontro">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="local" class="form-label">Where is he now?</label>
+                        <input type="text" class="form-control" id="local">
+                      </div>
+                    </div>
+                    <!--  -->
+
+                      <h6>Picture of the animal:</h6>
+                      <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="inputGroupFile02">
+                        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                    </div>
+                        <br>
+                        <hr>
+                        <br>
+
+                        <h4>Contact:</h4>
+                        <br>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                        </div>
+                        <div>
+                          <label for="telefone">Phone</label>
+                          <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">  
+                        </div>  
+                      <br><br>
+                      <img class="paw" src="./img/pata.png" alt="">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                </form>
+            </div>
+
+        </main>
+    
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

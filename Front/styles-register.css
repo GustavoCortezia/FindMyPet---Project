@@ -1,0 +1,45 @@
+.form-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 50%;
+    border: 3px green solid;
+    border-radius: 5%;
+    padding: 3%;
+}
+
+h2 {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    color: rgb(1, 95, 1);
+}
+
+.btn {
+    background-color: rgb(1, 95, 1) ;
+}
+
+.btn:hover {
+    color: rgb(1, 95, 1);
+    background-color: white;
+    border: 1px rgb(1, 95, 1) solid;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paw {
+    margin-right: 5px;
+    width: 3%;
+}
