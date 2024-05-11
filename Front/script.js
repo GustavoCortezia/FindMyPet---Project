@@ -6,31 +6,33 @@ const locationInput = document.getElementById('location');
 const imageInput = document.getElementById('image');
 const whenInput = document.getElementById('when');
 
-const submit = document.getElementById('submit');
+const submit = document.getElementById('submit-btn');
 
-
-submit.addEventListener('click', (createPet) => {
-    createPet.preventDefault()
-    const newPet = {
-        title: titleInput.value,
-        animal: animalInput.value,
-        description: descriptionInput.value,
-        found: foundInput.value,
-        location: locationInput.value,
-        image: imageInput.value,
-        when: whenInput.value,
-    }  
-
-  addNewPet(newPet);
-
-})
-
+if (submit) { 
+    submit.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const newPet = {
+            title: titleInput.value,
+            animal: animalInput.value,
+            description: descriptionInput.value,
+            found: foundInput.value,
+            location: locationInput.value,
+            image: imageInput.value,
+            when: whenInput.value,
+        }  
+        
+        addNewPet(newPet);
+        
+    })
+}
+    
   async function addNewPet(newPet) {
     try {
-      const response = await api.post('/pets/', newPet)
+      const response = await api.post('/pets', newPet)
   
       if (response.status === 201) {
-        location.href = "index.html"
+        location.href = "register.html"
         console.log("Cadastrado com sucesso")
       }
     } catch (error) {

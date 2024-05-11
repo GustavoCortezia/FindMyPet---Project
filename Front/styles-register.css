@@ -12,7 +12,7 @@ main {
 
 form{
     width: 50%;
-    border: 3px green solid;
+    border: 3px rgb(1, 95, 1) solid;
     border-radius: 5%;
     padding: 3%;
 }
