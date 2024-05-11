@@ -17,6 +17,10 @@ form{
     padding: 3%;
 }
 
+#found {
+    width: 160% !important;
+}
+
 h2 {
     margin: 20px;
     display: flex;
