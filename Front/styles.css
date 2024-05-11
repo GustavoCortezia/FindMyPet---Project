@@ -56,7 +56,8 @@
 }
 
 .card{
-    width: 25% !important;
+    /* width: 25% !important; */
+    width: 250px !important;
 }
 
 .card-img{

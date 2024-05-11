@@ -9,7 +9,7 @@ const whenInput = document.getElementById('when');
 const submit = document.getElementById('submit-btn');
 
 if (submit) { 
-    submit.addEventListener('submit', (e) => {
+    submit.addEventListener('click', (e) => {
         e.preventDefault();
         
         const newPet = {
