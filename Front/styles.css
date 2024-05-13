@@ -57,7 +57,7 @@
 
 .card{
     /* width: 25% !important; */
-    width: 250px !important;
+    width: 290px !important;
 }
 
 .card-img{
@@ -86,5 +86,19 @@ button:hover {
     padding: 10%;
     display: flex;
     justify-content: space-around;
+}
+
+
+.cards-group {
+    /* border: red 3px solid; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
 }
 
