@@ -14,9 +14,9 @@ async function createcards() {
       card1.classList.add('card1');
 
       card1.innerHTML = `
-        <div class="card" style="width: 18rem;">
-          <img class="card-img" src="${pets[i].image}" alt="...">
-          <div class="card-body">
+      <div class="card" style="width: 18rem;">
+      <div class="card-body">
+      <img class="card-img" src="${pets[i].img}" alt="...">
             <h5 class="card-title">${pets[i].title}</h5>
             <p class="card-text">${pets[i].description}</p>
           </div>
@@ -32,10 +32,12 @@ async function createcards() {
         </div>
       `;
 
-      cards.appendChild(card1); // Append card1 to cards
+      cards.appendChild(card1);
     }
 
-    cardContainer.appendChild(cards); // Append cards to cardContainer
+    if(cardContainer){
+        cardContainer.appendChild(cards);
+    }
   } catch (error) {
     console.log("erro ao encontrar pets.", error);
   }
