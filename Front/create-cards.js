@@ -17,7 +17,7 @@ async function createcards() {
       card.innerHTML = `
       <img class="card-img" src="${pets[i].img}" alt="...">
       <div class="card-body">
-            <h2 class="card-title">${pets[i].title}</h2>
+            <h4 class="card-title">${pets[i].title}</h4>
             <p class="card-text">${pets[i].description}</p>
           </div>
         <div class="infos">

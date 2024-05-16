@@ -5,6 +5,7 @@
     margin-top: 50px;
 }
 
+
 main {
     display: flex;
     justify-content: center;
@@ -16,6 +17,17 @@ form{
     border-radius: 5%;
     padding: 3%;
 }
+
+h2{
+    background-color: white !important;
+}
+
+.register-title {
+    width: 100%;
+    background-color: white;
+    padding-top: 20px;
+}
+
 
 #found {
     width: 160% !important;
@@ -46,4 +58,9 @@ h2 {
 .paw {
     margin-right: 5px;
     width: 3%;
+}
+
+
+.input-error {
+    border: 2px rgb(178, 2, 2) solid;
 }

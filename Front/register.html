@@ -13,7 +13,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
               <a class="navbar-brand" href="#" >
-                <img src="./img/logo preta.png" alt="">
+                <img src="./img/logo branca.png" alt="">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -38,12 +38,12 @@
           </nav>
           <br><br>
     
-          <div class="title">
-            <img class='logo'src="./img/logo branca.png" alt="" srcset="">
-        </div>
+          <div class="title"> </div>
     
         <br>
-        <h2>Register PET</h2>
+        <div class="register-title">
+          <h2>Register PET</h2>
+        </div>
     </header>
         <main>
             <div class="form-div">
@@ -56,37 +56,37 @@
 
                     <div class="mb-3">
                         <h6>Description</h6>
-                        <textarea id="description" name="message" style="width:100%; height:80px;"></textarea>
+                        <textarea id="description" name="message" style="width:100%; height:80px; " required></textarea>
                     </div>
 
                 <!--  -->
                 <div class="line">
                     <div class="mb-3">
                         <label for="found" class="form-label">Found where?</label>
-                        <input type="text" class="form-control" id="found">
+                        <input type="text" class="form-control" id="found" required>
                       </div>
 
 
                       <div class="mb-3">
                         <label for="when" class="form-label">Found When</label>
-                        <input type="date" class="form-control" id="when">
+                        <input type="date" class="form-control" id="when" required>
                       </div>
                     </div>
 
                       <!--  -->
                       <div class="mb-3">
                         <label for="location" class="form-label">Where is he now?</label>
-                        <input type="text" class="form-control" id="location">
+                        <input type="text" class="form-control" id="location" required>
                       </div>
                       
                       <h6>Picture of the animal:</h6>
                       <div class="input-group mb-3">
-                        <input type="file" class="form-control" id="image">
+                        <input type="file" class="form-control" id="image" required>
                         <label class="input-group-text" for="image">Upload</label>
                     </div>
 
                     <div class="col-md-4">
-                      <label for="animal" class="form-label">Animal</label>
+                      <label for="animal" class="form-label" required>Animal</label>
                       <select id="animal" class="form-select">
                         <option>Dog</option>
                         <option>Cat</option>
